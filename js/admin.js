@@ -1,12 +1,12 @@
 'use strict';
 /* ============================================================
    PIZZA NAPOLI — Panneau d'administration
-   Données stockées en localStorage. Mot de passe : napoli2025
+   Données stockées en localStorage. Mot de passe : napoli2026
    ============================================================ */
 
 const STORAGE_KEY    = 'pizzanapoli_menu_v1';
 const AUTH_KEY       = 'pizzanapoli_auth';
-const ADMIN_PASSWORD = 'napoli2025';
+const ADMIN_PASSWORD = 'napoli2026';
 
 /* ============================================================
    Données par défaut (copiées depuis app.js pour le fallback)
