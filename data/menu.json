@@ -1,0 +1,348 @@
+{
+  "restaurant": {
+    "name": "Pizza Napoli",
+    "tagline": "L'art de la pizza artisanale depuis plus de 20 ans",
+    "address": "9, avenue de la Gare",
+    "zip": "78250",
+    "city": "Hardricourt",
+    "phone": "01 30 99 82 65",
+    "mobile": "06 81 93 35 06",
+    "email": "contact@pizzanapoli78.fr",
+    "hours": [
+      { "days": "Lundi – Mardi", "hours": "Fermé", "closed": true },
+      { "days": "Mercredi – Jeudi", "hours": "18h00 – 21h00", "closed": false },
+      { "days": "Vendredi – Samedi", "hours": "18h00 – 22h00", "closed": false },
+      { "days": "Dimanche", "hours": "18h00 – 21h00", "closed": false }
+    ]
+  },
+  "categories": [
+    {
+      "id": "pizzas",
+      "label": "Nos Pizzas",
+      "icon": "🍕",
+      "color": "#C0392B",
+      "description": "Pâte maison fine et croustillante, ingrédients frais du marché"
+    },
+    {
+      "id": "calzones",
+      "label": "Calzones",
+      "icon": "🌙",
+      "color": "#8B4513",
+      "description": "Pizzas soufflées garnies et gratinées au four"
+    },
+    {
+      "id": "formules",
+      "label": "Formules",
+      "icon": "🍽️",
+      "color": "#27AE60",
+      "description": "Nos offres pour petits et grands"
+    },
+    {
+      "id": "desserts",
+      "label": "Desserts",
+      "icon": "🍮",
+      "color": "#8E44AD",
+      "description": "Douceurs maison pour finir en beauté"
+    },
+    {
+      "id": "boissons",
+      "label": "Boissons",
+      "icon": "🥤",
+      "color": "#2980B9",
+      "description": "Fraîcheur et convivialité dans chaque verre"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "category": "pizzas",
+      "name": "Margherita",
+      "description": "Coulis de tomate, mozzarella, origan frais",
+      "price": 9.50,
+      "badge": null,
+      "popular": false,
+      "vegetarian": true
+    },
+    {
+      "id": 2,
+      "category": "pizzas",
+      "name": "Reine",
+      "description": "Tomate, mozzarella, jambon blanc, champignons de Paris",
+      "price": 11.50,
+      "badge": "Classique",
+      "popular": true,
+      "vegetarian": false
+    },
+    {
+      "id": 3,
+      "category": "pizzas",
+      "name": "Napolitaine",
+      "description": "Tomate, mozzarella, anchois, câpres, olives noires, origan",
+      "price": 11.00,
+      "badge": null,
+      "popular": false,
+      "vegetarian": false
+    },
+    {
+      "id": 4,
+      "category": "pizzas",
+      "name": "4 Fromages",
+      "description": "Crème fraîche, mozzarella, gorgonzola, chèvre, emmental râpé",
+      "price": 12.00,
+      "badge": null,
+      "popular": false,
+      "vegetarian": true
+    },
+    {
+      "id": 5,
+      "category": "pizzas",
+      "name": "Américaine",
+      "description": "Tomate, mozzarella, poulet grillé, bacon croustillant, cheddar, oignons",
+      "price": 12.50,
+      "badge": null,
+      "popular": false,
+      "vegetarian": false
+    },
+    {
+      "id": 6,
+      "category": "pizzas",
+      "name": "Steak Haché",
+      "description": "Tomate, mozzarella, steak haché, oignons rouges, poivrons tricolores",
+      "price": 12.00,
+      "badge": null,
+      "popular": false,
+      "vegetarian": false
+    },
+    {
+      "id": 7,
+      "category": "pizzas",
+      "name": "Villageoise",
+      "description": "Tomate, mozzarella, lardons fumés, poivrons, oignons, olives",
+      "price": 11.50,
+      "badge": null,
+      "popular": false,
+      "vegetarian": false
+    },
+    {
+      "id": 8,
+      "category": "pizzas",
+      "name": "Italienne",
+      "description": "Tomate, mozzarella, jambon cru de Parme, roquette fraîche, copeaux de parmesan",
+      "price": 13.00,
+      "badge": "Chef",
+      "popular": true,
+      "vegetarian": false
+    },
+    {
+      "id": 9,
+      "category": "pizzas",
+      "name": "Pacifique",
+      "description": "Crème fraîche, mozzarella, crevettes roses, champignons, poireaux fondus",
+      "price": 13.50,
+      "badge": null,
+      "popular": false,
+      "vegetarian": false
+    },
+    {
+      "id": 10,
+      "category": "pizzas",
+      "name": "Spéciale Pizzaïolo",
+      "description": "Tomate, mozzarella, jambon, champignons, poivrons, olives, œuf frais",
+      "price": 13.00,
+      "badge": "Maison",
+      "popular": true,
+      "vegetarian": false
+    },
+    {
+      "id": 11,
+      "category": "pizzas",
+      "name": "Savoyarde",
+      "description": "Crème fraîche, mozzarella, pommes de terre, lardons fumés, reblochon fondu",
+      "price": 13.50,
+      "badge": null,
+      "popular": false,
+      "vegetarian": false
+    },
+    {
+      "id": 12,
+      "category": "pizzas",
+      "name": "Meulanaise",
+      "description": "Tomate, mozzarella, merguez, poivrons grillés, oignons rouges",
+      "price": 12.50,
+      "badge": null,
+      "popular": false,
+      "vegetarian": false
+    },
+    {
+      "id": 13,
+      "category": "pizzas",
+      "name": "Gaillonnaise",
+      "description": "Crème fraîche, mozzarella, chèvre frais, miel d'acacia, noix de Grenoble",
+      "price": 12.50,
+      "badge": null,
+      "popular": false,
+      "vegetarian": true
+    },
+    {
+      "id": 14,
+      "category": "pizzas",
+      "name": "Curasso",
+      "description": "Tomate, mozzarella, poulet mariné, ananas frais, curry doux",
+      "price": 12.00,
+      "badge": null,
+      "popular": false,
+      "vegetarian": false
+    },
+    {
+      "id": 15,
+      "category": "pizzas",
+      "name": "Raclette",
+      "description": "Crème fraîche, mozzarella, pommes de terre vapeur, jambon, fromage à raclette",
+      "price": 13.50,
+      "badge": null,
+      "popular": false,
+      "vegetarian": false
+    },
+    {
+      "id": 16,
+      "category": "pizzas",
+      "name": "Boursinoise",
+      "description": "Crème, mozzarella, pommes de terre, jambon, poulet rôti, Boursin ail & fines herbes, olives, origan",
+      "price": 13.50,
+      "badge": "Coup de cœur",
+      "popular": true,
+      "vegetarian": false
+    },
+    {
+      "id": 17,
+      "category": "pizzas",
+      "name": "À Composer",
+      "description": "Choisissez vos ingrédients sur une base Margherita. Parlez-nous de votre création !",
+      "price": 9.50,
+      "priceLabel": "à partir de",
+      "badge": null,
+      "popular": false,
+      "vegetarian": null
+    },
+    {
+      "id": 18,
+      "category": "calzones",
+      "name": "Calzone Simple",
+      "description": "Tomate, mozzarella, jambon — pâte soufflée dorée croustillante",
+      "price": 11.00,
+      "badge": null,
+      "popular": false,
+      "vegetarian": false
+    },
+    {
+      "id": 19,
+      "category": "calzones",
+      "name": "Calzone Complète",
+      "description": "Tomate, mozzarella, jambon, champignons, œuf, olives — pâte soufflée croustillante",
+      "price": 13.00,
+      "badge": "Populaire",
+      "popular": true,
+      "vegetarian": false
+    },
+    {
+      "id": 20,
+      "category": "formules",
+      "name": "Formule Duo Junior",
+      "description": "2 pizzas Reine Junior + 2 boissons au choix (33 cl). Idéal pour les enfants !",
+      "price": 17.00,
+      "badge": "Économique",
+      "popular": false,
+      "vegetarian": false
+    },
+    {
+      "id": 21,
+      "category": "desserts",
+      "name": "Tiramisu Maison",
+      "description": "Recette traditionnelle italienne — mascarpone crémeux, café espresso, biscuits cuillère, cacao amer",
+      "price": 4.50,
+      "badge": "Fait maison",
+      "popular": true,
+      "vegetarian": true
+    },
+    {
+      "id": 22,
+      "category": "boissons",
+      "name": "Coca-Cola",
+      "description": "Canette 33 cl",
+      "price": 2.50,
+      "badge": null,
+      "popular": false,
+      "vegetarian": true
+    },
+    {
+      "id": 23,
+      "category": "boissons",
+      "name": "Coca-Cola Zero",
+      "description": "Canette 33 cl",
+      "price": 2.50,
+      "badge": null,
+      "popular": false,
+      "vegetarian": true
+    },
+    {
+      "id": 24,
+      "category": "boissons",
+      "name": "Fanta Orange",
+      "description": "Canette 33 cl",
+      "price": 2.50,
+      "badge": null,
+      "popular": false,
+      "vegetarian": true
+    },
+    {
+      "id": 25,
+      "category": "boissons",
+      "name": "Sprite",
+      "description": "Canette 33 cl",
+      "price": 2.50,
+      "badge": null,
+      "popular": false,
+      "vegetarian": true
+    },
+    {
+      "id": 26,
+      "category": "boissons",
+      "name": "Eau Plate",
+      "description": "Bouteille 50 cl",
+      "price": 1.50,
+      "badge": null,
+      "popular": false,
+      "vegetarian": true
+    },
+    {
+      "id": 27,
+      "category": "boissons",
+      "name": "Eau Pétillante",
+      "description": "Bouteille 50 cl",
+      "price": 1.50,
+      "badge": null,
+      "popular": false,
+      "vegetarian": true
+    },
+    {
+      "id": 28,
+      "category": "boissons",
+      "name": "Jus d'Orange",
+      "description": "Brique 25 cl, 100% pur jus",
+      "price": 2.00,
+      "badge": null,
+      "popular": false,
+      "vegetarian": true
+    },
+    {
+      "id": 29,
+      "category": "boissons",
+      "name": "Bière Kronenbourg",
+      "description": "Canette 33 cl",
+      "price": 3.00,
+      "badge": null,
+      "popular": false,
+      "vegetarian": true
+    }
+  ]
+}
