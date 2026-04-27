@@ -228,6 +228,9 @@ h1, h2, h3, h4, h5 {
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 2px 24px rgba(0,0,0,0.35);
 }
+.header--hidden {
+  transform: translateY(-100%);
+}
 
 .nav {
   height: 100%;
@@ -1215,7 +1218,52 @@ h1, h2, h3, h4, h5 {
 .stagger-children.visible > *:nth-child(4) { transition-delay: 0.26s; opacity: 1; transform: none; }
 
 /* ============================================================
-   15. RESPONSIVE — TABLET (640px+)
+   15. BACK TO TOP
+   ============================================================ */
+#backToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 900;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--red-600), var(--red-700));
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-red);
+  opacity: 0;
+  transform: translateY(16px) scale(0.85);
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease),
+              box-shadow 0.3s var(--ease);
+  pointer-events: none;
+}
+#backToTop.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+#backToTop:hover {
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 12px 36px rgba(192,57,43,0.55);
+}
+#backToTop:active {
+  transform: scale(0.94);
+  transition-duration: 0.1s;
+}
+@media (max-width: 640px) {
+  #backToTop {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 46px;
+    height: 46px;
+  }
+}
+
+/* ============================================================
+   16. RESPONSIVE — TABLET (640px+)
    ============================================================ */
 @media (min-width: 640px) {
   .menu-grid {

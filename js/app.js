@@ -279,9 +279,32 @@ function initFilters() {
 function initHeader() {
   const header = $('#header');
   if (!header) return;
-  const toggle = () => header.classList.toggle('header--scrolled', window.scrollY > 60);
-  window.addEventListener('scroll', toggle, { passive: true });
-  toggle();
+
+  let lastY = window.scrollY;
+
+  const onScroll = () => {
+    const y = window.scrollY;
+
+    // Fond verre au-delà de 60px
+    header.classList.toggle('header--scrolled', y > 60);
+
+    // Rétractable : masque en scroll bas, réapparaît en scroll haut
+    // Zone morte de 6px pour éviter le micro-jitter
+    if (y > 120) {
+      if (y > lastY + 6) {
+        header.classList.add('header--hidden');
+      } else if (y < lastY - 6) {
+        header.classList.remove('header--hidden');
+      }
+    } else {
+      header.classList.remove('header--hidden');
+    }
+
+    lastY = y;
+  };
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 }
 
 /* ============================================================
